@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bumi Kayu — Every Piece, Explained</title>
+    <meta
+      name="description"
+      content="Full specifications, wood finishes, and made-to-order details for every Bumi Kayu piece."
+    />
+    <link rel="icon" href="icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" />
+          <circle cx="12" cy="12" r="5.5" />
+          <circle cx="12" cy="12" r="2" />
+          <path d="M12 3v1.5M12 19.5V21M3 12h1.5M19.5 12H21" />
+        </svg>
+        BUMI KAYU
+      </a>
+      <p class="tagline">Simple, Elegant, and Grounded</p>
+    </header>
+
+    <nav class="site-nav" aria-label="Primary">
+      <div class="site-nav__inner">
+        <a href="index.html">Home</a>
+        <a href="detail.html" aria-current="page">Collection</a>
+        <a href="transaksi.html">Order</a>
+        <a href="tentang.html">About Us</a>
+        <a href="kontak.html">Contact</a>
+      </div>
+    </nav>
+
+    <p class="notice-bar">
+      <b>Free delivery</b> across Bandung and nearby areas — choose our
+      in-house courier at checkout.
+    </p>
+
+    <main class="page-shell">
+      <aside class="sidebar" aria-label="Before you order">
+        <h2>Before You Order</h2>
+        <p>
+          Choose your wood finish before continuing to the order form. Every
+          piece is made to order, with a production time of about 30 days
+          depending on the piece you choose.
+        </p>
+      </aside>
+
+      <div class="content-column">
+        <h1>Every Piece, Explained</h1>
+
+        <!-- ============ SOFA SANTAI ============ -->
+        <article class="product-detail" id="sofa">
+          <img src="SofaSantaiBUMIKAYU.jpg" alt="Sofa in natural solid teak" />
+          <div>
+            <h2>Sofa</h2>
+            <p class="product-detail__price">Rp 12.000.000</p>
+            <p class="product-detail__desc">
+              Wide enough for a Sunday afternoon nap, sturdy enough for the
+              next twenty years. The Sofa rests on a base of natural
+              solid teak, hand-joined to bring quiet warmth into your living
+              room.
+            </p>
+            <p><b>Specifications &amp; Features</b></p>
+            <ul class="spec-list">
+              <li><b>Dimensions:</b> 256.5 cm (W) x 110.5 cm (D) x 83.8 cm (H)</li>
+              <li><b>Main Materials:</b> Solid Teak, Premium Upholstery Fabric &amp; High-Density Foam.</li>
+              <li><b>Additional Features:</b> Extra-wide seat, integrated teak base.</li>
+            </ul>
+
+            <form action="transaksi.html" method="get" class="order-form order-mini">
+              <input type="hidden" name="produk" value="Sofa" />
+              <input type="hidden" name="harga" value="12000000" />
+
+              <div class="field-block">
+                <span class="field-label" id="sofa-finish-label">Wood Finish</span>
+                <div class="swatch-group" role="radiogroup" aria-labelledby="sofa-finish-label">
+                  <label class="swatch-option is-checked">
+                    <input type="radio" name="varian" value="Natural Teak" checked />
+                    <span class="swatch swatch--natural"></span>
+                    <span class="label">Natural Teak</span>
+                  </label>
+                  <label class="swatch-option">
+                    <input type="radio" name="varian" value="Walnut" />
+                    <span class="swatch swatch--walnut"></span>
+                    <span class="label">Walnut</span>
+                  </label>
+                  <label class="swatch-option">
+                    <input type="radio" name="varian" value="Dark Mahogany" />
+                    <span class="swatch swatch--mahogany"></span>
+                    <span class="label">Dark Mahogany</span>
+                  </label>
+                </div>
+                <p class="helper-text">This determines the final color and grain of your piece.</p>
+              </div>
+
+              <div class="field-block">
+                <label class="field-label" for="sofa-qty">Quantity</label><br />
+                <span class="stepper">
+                  <button type="button" class="qty-decrease" aria-label="Decrease quantity">–</button>
+                  <input type="text" id="sofa-qty" name="jumlah" value="1" class="qty-input" inputmode="numeric" />
+                  <button type="button" class="qty-increase" aria-label="Increase quantity">+</button>
+                </span>
+                <span class="error-text qty-error"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Continue to Order Form</button>
+            </form>
+          </div>
+        </article>
+
+        <!-- ============ MEJA TV ============ -->
+        <article class="product-detail" id="mejatv">
+          <img src="MejaTVBUMIKAYU.jpg" alt="TV Stand in solid teak" />
+          <div>
+            <h2>TV Stand</h2>
+            <p class="product-detail__price">Rp 7.000.000</p>
+            <p class="product-detail__desc">
+              Every edge is rounded by hand, so there's nothing sharp to
+              catch a passing knee. Six soft-close drawers keep remotes,
+              cables, and clutter out of sight, so your living room stays as
+              calm as the design.
+            </p>
+            <p><b>Specifications &amp; Features</b></p>
+            <ul class="spec-list">
+              <li><b>Dimensions:</b> 188.0 cm (W) x 48.3 cm (D) x 48.3 cm (H)</li>
+              <li><b>Main Materials:</b> Solid Teak.</li>
+              <li><b>Additional Features:</b> 6 storage drawers with soft-close mechanism, rounded edges.</li>
+            </ul>
+
+            <form action="transaksi.html" method="get" class="order-form order-mini">
+              <input type="hidden" name="produk" value="TV Stand" />
+              <input type="hidden" name="harga" value="7000000" />
+
+              <div class="field-block">
+                <span class="field-label" id="mejatv-finish-label">Wood Finish</span>
+                <div class="swatch-group" role="radiogroup" aria-labelledby="mejatv-finish-label">
+                  <label class="swatch-option is-checked">
+                    <input type="radio" name="varian" value="Natural Teak" checked />
+                    <span class="swatch swatch--natural"></span>
+                    <span class="label">Natural Teak</span>
+                  </label>
+                  <label class="swatch-option">
+                    <input type="radio" name="varian" value="Walnut" />
+                    <span class="swatch swatch--walnut"></span>
+                    <span class="label">Walnut</span>
+                  </label>
+                  <label class="swatch-option">
+                    <input type="radio" name="varian" value="Dark Mahogany" />
+                    <span class="swatch swatch--mahogany"></span>
+                    <span class="label">Dark Mahogany</span>
+                  </label>
+                </div>
+                <p class="helper-text">This determines the final color and grain of your piece.</p>
+              </div>
+
+              <div class="field-block">
+                <label class="field-label" for="mejatv-qty">Quantity</label><br />
+                <span class="stepper">
+                  <button type="button" class="qty-decrease" aria-label="Decrease quantity">–</button>
+                  <input type="text" id="mejatv-qty" name="jumlah" value="1" class="qty-input" inputmode="numeric" />
+                  <button type="button" class="qty-increase" aria-label="Increase quantity">+</button>
+                </span>
+                <span class="error-text qty-error"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Continue to Order Form</button>
+            </form>
+          </div>
+        </article>
+
+        <!-- ============ MEJA KOPI ============ -->
+        <article class="product-detail" id="mejakopi">
+          <img src="MejaKopiBUMIKAYU.jpg" alt="Coffee Table in solid teak" />
+          <div>
+            <h2>Coffee Table</h2>
+            <p class="product-detail__price">Rp 5.000.000</p>
+            <p class="product-detail__desc">
+              A thick, solid square built to hold its ground. The rounded
+              corners keep it safe around curious kids — and the clean
+              lines keep it at home in any room.
+            </p>
+            <p><b>Specifications &amp; Features</b></p>
+            <ul class="spec-list">
+              <li><b>Dimensions:</b> 121.9 cm (W) x 121.9 cm (D) x 41.0 cm (H)</li>
+              <li><b>Main Materials:</b> Solid Teak.</li>
+              <li><b>Additional Features:</b> Thick layered profile, sturdy build, no sharp corners.</li>
+            </ul>
+
+            <form action="transaksi.html" method="get" class="order-form order-mini">
+              <input type="hidden" name="produk" value="Coffee Table" />
+              <input type="hidden" name="harga" value="5000000" />
+
+              <div class="field-block">
+                <span class="field-label" id="mejakopi-finish-label">Wood Finish</span>
+                <div class="swatch-group" role="radiogroup" aria-labelledby="mejakopi-finish-label">
+                  <label class="swatch-option is-checked">
+                    <input type="radio" name="varian" value="Natural Teak" checked />
+                    <span class="swatch swatch--natural"></span>
+                    <span class="label">Natural Teak</span>
+                  </label>
+                  <label class="swatch-option">
+                    <input type="radio" name="varian" value="Walnut" />
+                    <span class="swatch swatch--walnut"></span>
+                    <span class="label">Walnut</span>
+                  </label>
+                  <label class="swatch-option">
+                    <input type="radio" name="varian" value="Dark Mahogany" />
+                    <span class="swatch swatch--mahogany"></span>
+                    <span class="label">Dark Mahogany</span>
+                  </label>
+                </div>
+                <p class="helper-text">This determines the final color and grain of your piece.</p>
+              </div>
+
+              <div class="field-block">
+                <label class="field-label" for="mejakopi-qty">Quantity</label><br />
+                <span class="stepper">
+                  <button type="button" class="qty-decrease" aria-label="Decrease quantity">–</button>
+                  <input type="text" id="mejakopi-qty" name="jumlah" value="1" class="qty-input" inputmode="numeric" />
+                  <button type="button" class="qty-increase" aria-label="Increase quantity">+</button>
+                </span>
+                <span class="error-text qty-error"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Continue to Order Form</button>
+            </form>
+          </div>
+        </article>
+
+        <!-- ============ MEJA MAKAN ============ -->
+        <article class="product-detail" id="mejamakan">
+          <img src="MejaMakanBUMIKAYU.jpg" alt="Dining Table in solid teak" />
+          <div>
+            <h2>Dining Table</h2>
+            <p class="product-detail__price">Rp 13.000.000</p>
+            <p class="product-detail__desc">
+              Clean, straight lines that won't look dated in ten years. Its
+              generous, solid frame comfortably seats a big family dinner —
+              or a table full of guests on the nights that matter.
+            </p>
+            <p><b>Specifications &amp; Features</b></p>
+            <ul class="spec-list">
+              <li><b>Dimensions:</b> 228.6 cm (W) x 94.0 cm (D) x 76.2 cm (H)</li>
+              <li><b>Main Materials:</b> Solid Teak.</li>
+              <li><b>Additional Features:</b> Wide, easy-to-clean surface, thick and stable legs.</li>
+            </ul>
+
+            <form action="transaksi.html" method="get" class="order-form order-mini">
+              <input type="hidden" name="produk" value="Dining Table" />
+              <input type="hidden" name="harga" value="13000000" />
+
+              <div class="field-block">
+                <span class="field-label" id="mejamakan-finish-label">Wood Finish</span>
+                <div class="swatch-group" role="radiogroup" aria-labelledby="mejamakan-finish-label">
+                  <label class="swatch-option is-checked">
+                    <input type="radio" name="varian" value="Natural Teak" checked />
+                    <span class="swatch swatch--natural"></span>
+                    <span class="label">Natural Teak</span>
+                  </label>
+                  <label class="swatch-option">
+                    <input type="radio" name="varian" value="Walnut" />
+                    <span class="swatch swatch--walnut"></span>
+                    <span class="label">Walnut</span>
+                  </label>
+                  <label class="swatch-option">
+                    <input type="radio" name="varian" value="Dark Mahogany" />
+                    <span class="swatch swatch--mahogany"></span>
+                    <span class="label">Dark Mahogany</span>
+                  </label>
+                </div>
+                <p class="helper-text">This determines the final color and grain of your piece.</p>
+              </div>
+
+              <div class="field-block">
+                <label class="field-label" for="mejamakan-qty">Quantity</label><br />
+                <span class="stepper">
+                  <button type="button" class="qty-decrease" aria-label="Decrease quantity">–</button>
+                  <input type="text" id="mejamakan-qty" name="jumlah" value="1" class="qty-input" inputmode="numeric" />
+                  <button type="button" class="qty-increase" aria-label="Increase quantity">+</button>
+                </span>
+                <span class="error-text qty-error"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Continue to Order Form</button>
+            </form>
+          </div>
+        </article>
+
+        <!-- ============ KURSI MAKAN ============ -->
+        <article class="product-detail" id="kursimakan">
+          <img src="KursiMakanBUMIKAYU.jpg" alt="Dining Chair in solid teak" />
+          <div>
+            <h2>Dining Chair</h2>
+            <p class="product-detail__price">Rp 1.500.000</p>
+            <p class="product-detail__desc">
+              The backrest curves to follow your spine, not just the trend.
+              A solid teak frame paired with a contrasting fabric seat keeps
+              it light on its feet, but never fragile.
+            </p>
+            <p><b>Specifications &amp; Features</b></p>
+            <ul class="spec-list">
+              <li><b>Dimensions:</b> 45.7 cm (W) x 52.4 cm (D) x 81.3 cm (H)</li>
+              <li><b>Main Materials:</b> Solid Teak, Premium Upholstered Foam Seat.</li>
+              <li><b>Additional Features:</b> Light yet sturdy, cushioned seat.</li>
+            </ul>
+
+            <form action="transaksi.html" method="get" class="order-form order-mini">
+              <input type="hidden" name="produk" value="Dining Chair" />
+              <input type="hidden" name="harga" value="1500000" />
+
+              <div class="field-block">
+                <span class="field-label" id="kursimakan-finish-label">Wood Finish</span>
+                <div class="swatch-group" role="radiogroup" aria-labelledby="kursimakan-finish-label">
+                  <label class="swatch-option is-checked">
+                    <input type="radio" name="varian" value="Natural Teak" checked />
+                    <span class="swatch swatch--natural"></span>
+                    <span class="label">Natural Teak</span>
+                  </label>
+                  <label class="swatch-option">
+                    <input type="radio" name="varian" value="Walnut" />
+                    <span class="swatch swatch--walnut"></span>
+                    <span class="label">Walnut</span>
+                  </label>
+                  <label class="swatch-option">
+                    <input type="radio" name="varian" value="Dark Mahogany" />
+                    <span class="swatch swatch--mahogany"></span>
+                    <span class="label">Dark Mahogany</span>
+                  </label>
+                </div>
+                <p class="helper-text">This determines the final color and grain of your piece.</p>
+              </div>
+
+              <div class="field-block">
+                <label class="field-label" for="kursimakan-qty">Quantity</label><br />
+                <span class="stepper">
+                  <button type="button" class="qty-decrease" aria-label="Decrease quantity">–</button>
+                  <input type="text" id="kursimakan-qty" name="jumlah" value="1" class="qty-input" inputmode="numeric" />
+                  <button type="button" class="qty-increase" aria-label="Increase quantity">+</button>
+                </span>
+                <span class="error-text qty-error"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Continue to Order Form</button>
+            </form>
+          </div>
+        </article>
+
+        <!-- ============ KABINET PAJANGAN KACA ============ -->
+        <article class="product-detail" id="kabinet">
+          <img src="KabinetPajanganKacaBUMIKAYU.jpg" alt="Display Cabinet in solid teak and glass" />
+          <div>
+            <h2>Display Cabinet</h2>
+            <p class="product-detail__price">Rp 10.000.000</p>
+            <p class="product-detail__desc">
+              A quiet stage for the pieces you're proud of. Clear glass
+              doors, held by a structured teak frame, turn your favorite
+              china or décor into part of the room.
+            </p>
+            <p><b>Specifications &amp; Features</b></p>
+            <ul class="spec-list">
+              <li><b>Dimensions:</b> 138.4 cm (W) x 47.0 cm (D) x 232.4 cm (H)</li>
+              <li><b>Main Materials:</b> Solid Teak, Clear Tempered Glass.</li>
+              <li><b>Additional Features:</b> Adjustable shelving, double doors, architectural design.</li>
+            </ul>
+
+            <form action="transaksi.html" method="get" class="order-form order-mini">
+              <input type="hidden" name="produk" value="Display Cabinet" />
+              <input type="hidden" name="harga" value="10000000" />
+
+              <div class="field-block">
+                <span class="field-label" id="kabinet-finish-label">Wood Finish</span>
+                <div class="swatch-group" role="radiogroup" aria-labelledby="kabinet-finish-label">
+                  <label class="swatch-option is-checked">
+                    <input type="radio" name="varian" value="Natural Teak" checked />
+                    <span class="swatch swatch--natural"></span>
+                    <span class="label">Natural Teak</span>
+                  </label>
+                  <label class="swatch-option">
+                    <input type="radio" name="varian" value="Walnut" />
+                    <span class="swatch swatch--walnut"></span>
+                    <span class="label">Walnut</span>
+                  </label>
+                  <label class="swatch-option">
+                    <input type="radio" name="varian" value="Dark Mahogany" />
+                    <span class="swatch swatch--mahogany"></span>
+                    <span class="label">Dark Mahogany</span>
+                  </label>
+                </div>
+                <p class="helper-text">This determines the final color and grain of your piece.</p>
+              </div>
+
+              <div class="field-block">
+                <label class="field-label" for="kabinet-qty">Quantity</label><br />
+                <span class="stepper">
+                  <button type="button" class="qty-decrease" aria-label="Decrease quantity">–</button>
+                  <input type="text" id="kabinet-qty" name="jumlah" value="1" class="qty-input" inputmode="numeric" />
+                  <button type="button" class="qty-increase" aria-label="Increase quantity">+</button>
+                </span>
+                <span class="error-text qty-error"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Continue to Order Form</button>
+            </form>
+          </div>
+        </article>
+
+        <!-- ============ TEMPAT TIDUR ============ -->
+        <article class="product-detail" id="tempattidur">
+          <img src="TempatTidurBUMIKAYU.jpg" alt="Bed Frame in solid teak" />
+          <div>
+            <h2>Bed Frame</h2>
+            <p class="product-detail__price">Rp 17.500.000</p>
+            <p class="product-detail__desc">
+              A King-size platform frame built low and steady, paired with a
+              fabric-upholstered headboard you'll actually want to lean back
+              into. Made for the kind of rest that starts the moment you sit
+              down.
+            </p>
+            <p><b>Specifications &amp; Features</b></p>
+            <ul class="spec-list">
+              <li><b>Dimensions:</b> 223.5 cm (W) x 227.3 cm (D) x 96.5 cm (H)</li>
+              <li><b>Main Materials:</b> Solid Teak, Premium Upholstered Headboard.</li>
+              <li><b>Additional Features:</b> Low-profile design, comfortable headboard to lean against.</li>
+            </ul>
+
+            <form action="transaksi.html" method="get" class="order-form order-mini">
+              <input type="hidden" name="produk" value="Bed Frame" />
+              <input type="hidden" name="harga" value="17500000" />
+
+              <div class="field-block">
+                <span class="field-label" id="tempattidur-finish-label">Wood Finish</span>
+                <div class="swatch-group" role="radiogroup" aria-labelledby="tempattidur-finish-label">
+                  <label class="swatch-option is-checked">
+                    <input type="radio" name="varian" value="Natural Teak" checked />
+                    <span class="swatch swatch--natural"></span>
+                    <span class="label">Natural Teak</span>
+                  </label>
+                  <label class="swatch-option">
+                    <input type="radio" name="varian" value="Walnut" />
+                    <span class="swatch swatch--walnut"></span>
+                    <span class="label">Walnut</span>
+                  </label>
+                  <label class="swatch-option">
+                    <input type="radio" name="varian" value="Dark Mahogany" />
+                    <span class="swatch swatch--mahogany"></span>
+                    <span class="label">Dark Mahogany</span>
+                  </label>
+                </div>
+                <p class="helper-text">This determines the final color and grain of your piece.</p>
+              </div>
+
+              <div class="field-block">
+                <label class="field-label" for="tempattidur-qty">Quantity</label><br />
+                <span class="stepper">
+                  <button type="button" class="qty-decrease" aria-label="Decrease quantity">–</button>
+                  <input type="text" id="tempattidur-qty" name="jumlah" value="1" class="qty-input" inputmode="numeric" />
+                  <button type="button" class="qty-increase" aria-label="Increase quantity">+</button>
+                </span>
+                <span class="error-text qty-error"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Continue to Order Form</button>
+            </form>
+          </div>
+        </article>
+
+        <!-- ============ LEMARI PAKAIAN ============ -->
+        <article class="product-detail" id="lemaripakaian">
+          <img src="LemariPakaianBUMIKAYU.jpg" alt="Wardrobe in solid teak" />
+          <div>
+            <h2>Wardrobe</h2>
+            <p class="product-detail__price">Rp 16.000.000</p>
+            <p class="product-detail__desc">
+              Clean and minimal, so the natural grain of the teak does the
+              talking. Hanging space up top and three full drawers below
+              make the most of every vertical inch.
+            </p>
+            <p><b>Specifications &amp; Features</b></p>
+            <ul class="spec-list">
+              <li><b>Dimensions:</b> 115.6 cm (W) x 61.0 cm (D) x 200.7 cm (H)</li>
+              <li><b>Main Materials:</b> Solid Teak.</li>
+              <li><b>Additional Features:</b> 2 swing doors for hanging space, 3 large bottom drawers.</li>
+            </ul>
+
+            <form action="transaksi.html" method="get" class="order-form order-mini">
+              <input type="hidden" name="produk" value="Wardrobe" />
+              <input type="hidden" name="harga" value="16000000" />
+
+              <div class="field-block">
+                <span class="field-label" id="lemaripakaian-finish-label">Wood Finish</span>
+                <div class="swatch-group" role="radiogroup" aria-labelledby="lemaripakaian-finish-label">
+                  <label class="swatch-option is-checked">
+                    <input type="radio" name="varian" value="Natural Teak" checked />
+                    <span class="swatch swatch--natural"></span>
+                    <span class="label">Natural Teak</span>
+                  </label>
+                  <label class="swatch-option">
+                    <input type="radio" name="varian" value="Walnut" />
+                    <span class="swatch swatch--walnut"></span>
+                    <span class="label">Walnut</span>
+                  </label>
+                  <label class="swatch-option">
+                    <input type="radio" name="varian" value="Dark Mahogany" />
+                    <span class="swatch swatch--mahogany"></span>
+                    <span class="label">Dark Mahogany</span>
+                  </label>
+                </div>
+                <p class="helper-text">This determines the final color and grain of your piece.</p>
+              </div>
+
+              <div class="field-block">
+                <label class="field-label" for="lemaripakaian-qty">Quantity</label><br />
+                <span class="stepper">
+                  <button type="button" class="qty-decrease" aria-label="Decrease quantity">–</button>
+                  <input type="text" id="lemaripakaian-qty" name="jumlah" value="1" class="qty-input" inputmode="numeric" />
+                  <button type="button" class="qty-increase" aria-label="Increase quantity">+</button>
+                </span>
+                <span class="error-text qty-error"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Continue to Order Form</button>
+            </form>
+          </div>
+        </article>
+
+        <!-- ============ MEJA SAMPING ============ -->
+        <article class="product-detail" id="mejasamping">
+          <img src="MejaSampingBUMIKAYU.jpg" alt="Nightstand in solid teak" />
+          <div>
+            <h2>Nightstand</h2>
+            <p class="product-detail__price">Rp 2.000.000</p>
+            <p class="product-detail__desc">
+              A gently curved nightstand that pairs easily with the rest of
+              the collection. An open shelf keeps what you reach for often
+              within arm's reach; a closed drawer keeps the rest private.
+            </p>
+            <p><b>Specifications &amp; Features</b></p>
+            <ul class="spec-list">
+              <li><b>Dimensions:</b> 81.3 cm (W) x 48.3 cm (D) x 61.0 cm (H)</li>
+              <li><b>Main Materials:</b> Solid Teak, Antique Brass Drawer Handle.</li>
+              <li><b>Additional Features:</b> 1 open compartment, 1 closed drawer, rounded corners.</li>
+            </ul>
+
+            <form action="transaksi.html" method="get" class="order-form order-mini">
+              <input type="hidden" name="produk" value="Nightstand" />
+              <input type="hidden" name="harga" value="2000000" />
+
+              <div class="field-block">
+                <span class="field-label" id="mejasamping-finish-label">Wood Finish</span>
+                <div class="swatch-group" role="radiogroup" aria-labelledby="mejasamping-finish-label">
+                  <label class="swatch-option is-checked">
+                    <input type="radio" name="varian" value="Natural Teak" checked />
+                    <span class="swatch swatch--natural"></span>
+                    <span class="label">Natural Teak</span>
+                  </label>
+                  <label class="swatch-option">
+                    <input type="radio" name="varian" value="Walnut" />
+                    <span class="swatch swatch--walnut"></span>
+                    <span class="label">Walnut</span>
+                  </label>
+                  <label class="swatch-option">
+                    <input type="radio" name="varian" value="Dark Mahogany" />
+                    <span class="swatch swatch--mahogany"></span>
+                    <span class="label">Dark Mahogany</span>
+                  </label>
+                </div>
+                <p class="helper-text">This determines the final color and grain of your piece.</p>
+              </div>
+
+              <div class="field-block">
+                <label class="field-label" for="mejasamping-qty">Quantity</label><br />
+                <span class="stepper">
+                  <button type="button" class="qty-decrease" aria-label="Decrease quantity">–</button>
+                  <input type="text" id="mejasamping-qty" name="jumlah" value="1" class="qty-input" inputmode="numeric" />
+                  <button type="button" class="qty-increase" aria-label="Increase quantity">+</button>
+                </span>
+                <span class="error-text qty-error"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Continue to Order Form</button>
+            </form>
+          </div>
+        </article>
+      </div>
+
+      <aside class="sidebar sidebar--quality" aria-label="Our quality promise">
+        <h2>Our Quality Promise</h2>
+        <div class="quality-item"><b>100% Certified Solid Teak</b>Officially certified sourcing.</div>
+        <div class="quality-item"><b>5-Year Warranty</b>Backed by a full structural warranty.</div>
+      </aside>
+    </main>
+
+    <footer class="site-footer">&copy; 2026 Bumi Kayu.</footer>
+    <script src="script.js"></script>
+  </body>
+</html>

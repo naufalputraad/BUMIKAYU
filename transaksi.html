@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bumi Kayu — Order Form</title>
+    <meta name="description" content="Complete your made-to-order request for a Bumi Kayu piece." />
+    <link rel="icon" href="icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" />
+          <circle cx="12" cy="12" r="5.5" />
+          <circle cx="12" cy="12" r="2" />
+          <path d="M12 3v1.5M12 19.5V21M3 12h1.5M19.5 12H21" />
+        </svg>
+        BUMI KAYU
+      </a>
+      <p class="tagline">Simple, Elegant, and Grounded</p>
+    </header>
+
+    <nav class="site-nav" aria-label="Primary">
+      <div class="site-nav__inner">
+        <a href="index.html">Home</a>
+        <a href="detail.html">Collection</a>
+        <a href="transaksi.html" aria-current="page">Order</a>
+        <a href="tentang.html">About Us</a>
+        <a href="kontak.html">Contact</a>
+      </div>
+    </nav>
+
+    <p class="notice-bar">
+      <b>Free delivery</b> across Bandung and nearby areas — choose our
+      in-house courier at checkout.
+    </p>
+
+    <main class="page-shell">
+      <aside class="sidebar" aria-label="Shop by room">
+        <h2>Shop by Room</h2>
+        <ul>
+          <li><a href="index.html#ruangtamu">Living Room</a></li>
+          <li><a href="index.html#ruangmakan">Dining Room</a></li>
+          <li><a href="index.html#kamartidur">Bedroom</a></li>
+        </ul>
+      </aside>
+
+      <div class="content-column">
+        <h1>Order Form</h1>
+        <p style="text-align: center; color: #6b5c4c; margin-top: -1.2rem; margin-bottom: var(--space-5);">
+          Fill in your details so we can prepare delivery
+        </p>
+
+        <!-- EMPTY STATE / ORDER SUMMARY PATTERN — filled in by script.js -->
+        <div id="order-summary"></div>
+
+        <div class="order-mini" id="order-form-card" style="padding: var(--space-5);">
+          <form id="order-form" novalidate>
+            <div class="field-block">
+              <label class="field-label" for="nama">Full Name</label>
+              <input type="text" id="nama" name="nama" placeholder="e.g. Ahmad Fauzi" autocomplete="name" />
+              <span class="error-text" data-for="nama"></span>
+            </div>
+
+            <div class="field-block">
+              <label class="field-label" for="whatsapp">WhatsApp Number</label>
+              <input type="tel" id="whatsapp" name="whatsapp" placeholder="08xx-xxxx-xxxx" autocomplete="tel" />
+              <p class="helper-text">We'll only use this to confirm your delivery schedule.</p>
+              <span class="error-text" data-for="whatsapp"></span>
+            </div>
+
+            <div class="field-block">
+              <label class="field-label" for="pembayaran">Payment Method</label>
+              <select id="pembayaran" name="pembayaran">
+                <option value="transfer">Bank Transfer</option>
+                <option value="qris">QRIS (All Payment Apps)</option>
+                <option value="ewallet">E-Wallet (GoPay/OVO/DANA)</option>
+              </select>
+            </div>
+
+            <fieldset class="field-block">
+              <legend class="field-label">Delivery Method</legend>
+              <div class="radio-card-group" role="radiogroup">
+                <label class="radio-card is-checked">
+                  <input type="radio" name="kurir" value="armada" checked />
+                  <span>
+                    <span class="radio-card__title">In-House Courier (Bandung Area Only)</span><br />
+                    <span class="radio-card__note">Free with every order in this area.</span>
+                  </span>
+                </label>
+                <label class="radio-card">
+                  <input type="radio" name="kurir" value="kargo" />
+                  <span>
+                    <span class="radio-card__title">Cargo Shipping (Outside Bandung)</span><br />
+                    <span class="radio-card__note">Rate calculated by destination.</span>
+                  </span>
+                </label>
+                <label class="radio-card">
+                  <input type="radio" name="kurir" value="ambil" />
+                  <span>
+                    <span class="radio-card__title">Pick Up at Our Workshop</span><br />
+                    <span class="radio-card__note">No delivery address needed.</span>
+                  </span>
+                </label>
+              </div>
+              <span class="error-text" data-for="kurir"></span>
+            </fieldset>
+
+            <div class="field-block">
+              <label class="field-label" for="alamat">Delivery Address</label>
+              <textarea id="alamat" name="alamat" placeholder="Street, house number, and a nearby landmark"></textarea>
+              <p class="helper-text" id="address-requirement-note">Helps our courier find you.</p>
+              <span class="error-text" data-for="alamat"></span>
+            </div>
+
+            <div class="form-status" id="form-status" aria-live="polite"></div>
+
+            <div style="display: flex; gap: var(--space-3); flex-wrap: wrap;">
+              <button type="submit" class="btn btn-primary" id="submit-btn">Confirm Order</button>
+              <button type="reset" class="btn btn-outline">Clear Form</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- CONFIRMATION MESSAGE PATTERN — hidden until the form is validated and submitted -->
+        <div class="confirmation-card" id="order-confirmation" style="display: none" aria-live="polite">
+          <svg class="confirmation-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M8 12.5l2.5 2.5L16 9" />
+          </svg>
+          <h2 style="margin-bottom: var(--space-2);">Order Received!</h2>
+          <p id="confirmation-body" style="margin: 0;"></p>
+        </div>
+      </div>
+
+      <aside class="sidebar sidebar--quality" aria-label="Our quality promise">
+        <h2>Our Quality Promise</h2>
+        <div class="quality-item"><b>100% Certified Solid Teak</b>Officially certified sourcing.</div>
+        <div class="quality-item"><b>5-Year Warranty</b>Backed by a full structural warranty.</div>
+      </aside>
+    </main>
+
+    <footer class="site-footer">&copy; 2026 Bumi Kayu.</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
